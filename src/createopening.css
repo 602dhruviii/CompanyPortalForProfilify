@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+.b{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.imr{
+  margin-top: 3%;
+width: 60vh;
+margin-left: 1080px;
+}
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    width: 100vh;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #bbe2ea;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color:#010101;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+   
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #bdb8b8;
+    font-size: 12px;
+  }
+  
+button{
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    color: #020202;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    box-shadow:#3c3f40 0px 1px 2px 0px;
+  }
+  
+button:hover {
+    background: #030303;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000000;
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,100% {
+      left: 100%;
+    }
+  }
+  h1{
+    color: #000000;
+    text-align: center;
+    font-family:'Anta';
+  }
+  .login-box a span:nth-child(1) {
+    bottom: 2px;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03f40f);
+    animation: btn-anim1 2s linear infinite;
+  }
+  .radio-options {
+    
+    margin-top:5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+  }
+  .radio-options input[type="radio"] {
+    width: 20px;
+    height: 20px;
+  }
+.rad{
+    color:#000000;
+    font-weight: bold;
+}  
